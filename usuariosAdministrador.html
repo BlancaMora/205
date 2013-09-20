@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vista Administrador</title>
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">   
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+  <header>
+    
+        <div class="navbar">
+          <div class="navbar-inner" id="Navegador">
+            <h3 id="tituloNavBar">Administrador</h3>
+          </div>
+        </div>
+      
+  </header>
+  <div class="container-fluid" >
+    <div class="row-fluid">
+      <div class="span2">
+      <img id="imgUser" src="img/user.jpg" alt="" class="img-rounded"/>
+        <div id="MenuIzquierdo" class="tabbable">                
+                <ul class="nav nav-tabs nav-stacked">                    
+                    <li class="active">
+                        <a href="" data-toggle="tab">Inicio</a>
+                    </li>
+                    <li >
+                        <a href="permisos.html">Permisos</a>
+                    </li>
+                    <li>
+                        <a href="ciclosAdministrador.html">Ciclos</a>
+                    </li>
+                    <li>
+                        <a href="usuariosAdministrador.html">Usuarios</a>
+                    </li>
+                    
+                </ul>        
+      </div>  
+
+      </div>
+      <div class="span10">
+        <div class="well">
+          <div class="form-search">
+            <label for="buscar" >Ingrese Codigo</label>
+            <input type="text" id="codigo"></input>
+            <button class="btn" type="submit">Buscar</button>
+          
+
+<div class="tablaPermisos">
+          <table class="table table-bordered table-striped table-hover">
+          <thead>
+            <tr>
+              <th>Select</th>
+              <th>Codigo</th>
+              <th>Pass </th>
+              <th>Permiso</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox"></input></th>
+              <td>2034</td>
+              <td>user01</td>
+              <td>Maestro</td>
+         
+          </tbody>
+        </table>
+        </div>
+            <button class="btn" type="delete">Eliminar</button>
+          </div>
+
+        </div>
+                           
+
+      </div>
+    </div>
+      
+
+ </div>
+
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
