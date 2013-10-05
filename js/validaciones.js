@@ -1,24 +1,32 @@
-function validaformulario(){
+function validaLogin(){
 
-//var regex = /^\d{5}$/
-//var form = document.getElementById('codigo');
-//var codigo = document.getElementById('codigo');
+	var codigo = document.getElementById("codigo").value;
+	var password = document.getElementById("password").value;
 
-var boton = document.getElementById('enviado');
+if (codigo == "" || password == ""){
+	alert("codigo o password vacios");
+return;
+}
+
+if ( codigo != parseInt(codigo)){
+	alert("solo se permiten numeros en el codigo");
+return;
+}
+
+if (codigo == "206724639" && password== "admin"){
+
+	window.open("administrador.html");
+}
+if (codigo == "1234" && password== "maestro"){
+
+	window.open("index.html");
+}
+if (codigo == "5678" && password== "alumno"){
+
+	window.open("alumno.html");
+}
 
 
-//if ()
-// 
-/*
-if(codigo.value==regex){
-	var div = document.createElement('div');
-	div.setAttribute('id','status_error');
-
-	var msg = document.createTextNode('Debes escribir algo');
-	div.appendChild(msg);
-*/
-
-
-
+document.getElementById(login).submit();
 
 }
