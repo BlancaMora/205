@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vista Administrador</title>
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">   
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/datepicker.css">
+</head>
+<body>
+  <header>
+    
+        <div class="navbar">
+          <div class="navbar-inner" id="Navegador">
+            <h3 id="tituloNavBar">Administrador</h3>
+          </div>
+        </div>
+      
+  </header>
+  <div class="container-fluid" >
+    <div class="row-fluid">
+      <div class="span2">
+      <img id="imgUser" src="img/user.jpg" alt="" class="img-rounded"/>
+        <div id="MenuIzquierdo" class="tabbable">                
+                <ul class="nav nav-tabs nav-stacked">                    
+                    <li class="active">
+                        <a href="" data-toggle="tab">Inicio</a>
+                    </li>
+                    <li >
+                        <a href="permisos.html">Permisos</a>
+                    </li>
+                    <li>
+                        <a href="ciclosAdministrador.html">Ciclos</a>
+                    </li>
+                    <li>
+                        <a href="usuariosAdministrador.html">Usuarios</a>
+                    </li>
+                    
+                </ul>        
+      </div>  
+
+      </div>
+      <div class="span10">
+        <h3>Dar de Alta un ciclo</h3>
+        <form action="creaCiclo.php" class="form-horizontal">
+          
+          <div class="well">
+            <label>Fecha de inicio</label> 
+            <input type="text" class="span3" value="02-16-2013" id="dp1"></input>
+            <button>OK</button>
+
+          <label>Fecha de Fin</label> 
+         
+            <input type="text" class="span3" value="06-16-2013" id="dp1"></input>
+            <button>OK</button>
+          </div>
+          
+          <div class="well">
+            <label>Dias Festivos</label> 
+            <input type="text" class="span2" value="02-16-2013" id="dp1"></input>
+            <label>Motivo: </label>
+            <input type="text"></input>
+            <button>+</button>
+            <button>OK</button>
+          </div>
+              <div class="tablaPermisos">
+          <table class="table table-bordered table-striped table-hover">
+          <thead>
+            <tr>
+              <th>Dia</th>
+              <th>Motivo </th>
+             
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>02-16-2013</td>
+              <td>motivo x</td>
+             
+            </tr>
+             <tr>
+              <td>02-16-2013</td>
+              <td>motivo y</td>
+             
+            </tr>
+          
+          </tbody>
+        </table>
+        </div>
+        <div class="tablaBotones" id="tablaBotonesPer">
+          <button>Dar de Alta el CICLO</button>
+         
+        </div>
+     
+
+      </div>
+    </div>
+      
+
+        </form>
+                     
+
+      </div>
+    </div>
+      
+
+ </div>
+
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript"src="js/bootstrap-datepicker.js" ></script>
+</body>
+</html>

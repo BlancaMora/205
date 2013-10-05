@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Prueba Bootstrap</title>         
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body> 
+        <header>
+            <h1>Profesor</h1>
+        </header>
+        
+        <aside>    
+            <img id="imgUser" src="img/user.jpg" alt="User" class="img-rounded"/>                               
+            <div id="MenuIzquierdo" class="tabbable">                
+                <ul class="nav nav-tabs nav-stacked">                    
+                    <li>
+                        <a href="index.html" data-toggle="tab">Inicio</a>
+                    </li>
+                    <li >
+                        <a href="AreaAlumnos.html">Alta Alumnos</a>
+                    </li>
+                    <li>
+                        <a href="AreaAsistencias.html">Asistencias</a>
+                    </li>
+                    <li>
+                        <a href="AreaArchivos.html">Cargar Archivos</a>
+                    </li>
+                    <li>
+                        <a href="AreaCalificaciones.html">Calificaciones</a>
+                    </li>
+                    <li class="active">
+                        <a href="AreaCiclos.html">Alta Ciclos</a>
+                    </li>
+                    <li>
+                        <a href="AreaCursos.html">Alta Cursos</a>
+                    </li>
+                </ul>                
+            </div>               
+        </aside>
+        <section>
+            <div id="Contenido" class="tab-content">                
+                <div id="AreaCiclos" class="tab-pane active">
+                    <div class="container">
+                        <form method="post" action="AreaCiclos.html">
+                            <fieldset>
+                                <legend id="TituloArea"><strong>Alta Ciclo Escolar</strong></legend>
+                                <div id="fecha">
+                                    <label for="fechaInicio"><strong>Fecha Inicio</strong></label>
+                                    <input type="date" id="fechaInicio" name="fechaInicio">
+                                    <label for="fechaFin"><strong>Fecha Fin</strong></label>
+                                    <input type="date" id="fechaFin" name="fechaFin">
+                                </div>                                                       
+                                <div>
+                                    <label for="diasFestivos"><strong>Dias Festivos</strong></label>
+                                    <input type="date" id="diasFestivos" name="diasFestivos">
+                                </div>                            
+                                <div>
+                                    <button type="submit" class="btn" id="btnAceptar"><strong>Aceptar</strong></button>
+                                    <button type="reset" class="btn" id="btnLimpiar"><strong>Limpiar</strong></button>
+                                </div>                  
+                                <div id="tablaProvisional">
+                                    <table class="table table-bordered">
+                                        <caption><strong>Datos Capturados</strong></caption>
+                                        <thead>
+                                            <tr>
+                                                <th>Fecha Inicio</th>
+                                                <th>Fecha Fin</th>
+                                                <th>Dias Festivos</th>
+                                            </tr>   
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>   
+                                        </thead>    
+                                        <tbody>                                        
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div>
+                                    <button type="submit" class="btn" id="btnEnviar"><strong>Enviar</strong></button>
+                                    <button type="reset" class="btn" id="btnCancelar"><strong>Cancelar</strong></button>
+                                </div>                  
+                            <fieldset>  
+                        </form>
+                    </div>
+                </div>                
+            </div>                         
+        </section>
+        <script src="js/bootstrap.js"></script>
+    </body>
+</html>
