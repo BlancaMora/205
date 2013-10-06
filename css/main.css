@@ -64,10 +64,9 @@ caption
     font-size: 20px;
 }
 
-/*a#abrirArchivo
-{
-    float: right;
-}*/
+a#abrirArchivo
+{    
+}
 
 div#fecha
 {
@@ -121,100 +120,73 @@ div#Examinar
     border: none;
 }
 =======
-   Author's custom styles
-   ========================================================================== */
+Author's custom styles
+========================================================================== */
 
-	h1 
-    { 
-        font-size: 24pt;
-        color: #369; 
-        text-align: center;
-    }
+h1 
+{ 
+    font-size: 24pt;
+    color: #369; 
+    text-align: center;
+}
 
-    .texto
-    {
-        text-align: center;
-        font-size: 16pt;
-    }
+.texto
+{
+    text-align: center;
+    font-size: 16pt;
+}
 
+
+/* ==========================================================================
+Area Alumnos
+========================================================================== */   
+
+legend#TituloArea
+{
+    font-size: 18pt;                
+    color: #369; 
+    text-align: center;
+}
+
+div#tablaProvisional
+{
+    padding-top: 4%;
+    padding-left: 3%;
+    padding-right: 3%;        
+}
+
+div label
+{        
+    padding-bottom: 20px;
+    padding-right: 15px;
+    color: #369;
+}
+
+caption
+{   
+    color: #368;
+    font-size: 16px;
+}
+
+th
+{   
+    color: #369;
+    font-size: 16px;
+}
+
+
+div#formularioAlumno
+{
+    text-align: center;
+}
     
-/* ==========================================================================
-   Area Alumnos
-   ========================================================================== */   
-
-    legend#TituloArea
-    {
-        font-size: 18pt;                
-        color: #369; 
-        text-align: center;
-    }
-
-    div#tablaProvisional
-    {
-        padding-top: 4%;
-        padding-left: 3%;
-        padding-right: 3%;        
-    }
-
-    div label
-    {        
-        padding-bottom: 20px;
-        padding-right: 15px;
-        color: #369;
-    }
-
-    caption
-    {   
-        color: #368;
-        font-size: 16px;
-    }
-
-    th
-    {   
-        color: #369;
-        font-size: 16px;
-    }
-
-/* ==========================================================================
-   Area Archivos
-   ========================================================================== */   
-   
-   caption
-   {
-        padding-bottom: 20px;
-        font-size: 20px;
-   }
-
-   a#abrirArchivo
-   {
-        float: right;
-   }
-
-   div#fecha
-   {
-        padding: 10px;
-   }   
-
-    .color_fondo
-    {
-        background: gray;
-    }
+div#ApectosEvaluacion
+{
+    width: 40%;
+}
 
 
-    img#imageUser
-    {
-        padding-bottom: 2% 
-    }
-
-    div#clonarCurso
-    {
-        float: right;   
-    }
-
-    div p
-    {
-        font-size: 30pt;                
-        color: #368; 
-        text-align: center;
-    }
->>>>>>> fc86609ad6e2f5ea8ecfae6f63169f9c03b0aca6
+.posicionElementos
+{
+    text-align: center;
+}

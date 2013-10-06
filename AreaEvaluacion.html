@@ -58,79 +58,120 @@
                         </div>
                         <div class="span9">                            
                             <form  method="post" action="creaEvaluacion.php">
-                                <legend id="TituloArea" class="alineText"><strong>Evaluación de Cursos</strong></legend>
-                                
-                                <div class="well">
-                                    <div id="formularioEvaluacion">
-                                        <div class="form-inline">
-                                            <label for="criterios"><strong>Criterios de Evaluación</strong></label> 
-                                            <select name="criterios" class="input-xlarge">
-                                                <option selected value="0"> 
-                                                    <label class="checkbox">
-                                                        elige 
-                                                     </label>
-                                                </option>
-                                                <option value="1">AsSecte</option>      
-                                                <option value="2">TAREAS</option>
-                                                <option value="3">PRACTICAS</option>
-                                                <option value="4">EXAMENES PARCIALES</option>
-                                                <option value="5">EXAMENES DEPARTAMENTALES</option>
-                                                <option value="6">PARTICIPACION</option>
-                                                <option value="7">PROYECTO FINAL</option>
-                                                <option value="8">EJERCICIOS EN CLASE</option>
-                                                <option value="9">AGREGAR......</option>        
-                                            </select>
+                                <legend id="TituloArea"><strong>Agregar Evaluación a un Cruso</strong></legend>
+                                <div class="well" >
+                                    <div id="formularioAlumno">
+                                        <div id="cicloElige" class="form-inline" id="cicloElige">
+                                            <label for="ciclo"><strong>Ciclo</strong></label> 
+                                            <select name="Ciclo" class="input-small">
+                                                <option selected value="0">Ciclo</option>        
+                                            </select>                                            
+                                            <label for="dia"><strong>NRC</strong></label> 
+                                            <input class="input-small" type="number">   
+                                            <a id="abrirArchivo" class="btn btn-mini" href="#">ok</a>
                                         </div>  
+                                    </div>                                                                    
+                                </div>   
+                                <div class="well" >
+                                    <label class="texto"><strong>Agregar Evaluación</strong></label>
+                                    <div class="well"  id="ApectosEvaluacion"> 
+                                        <label for="AspectoEv" class="texto"><strong>Aspectos de Evaluación</strong></label> 
 
                                         <div class="form-inline">
-                                            <label for="nombre"><strong>Nombre(s)</strong></label>
-                                            <input type="text" class="input-xxlarge" id="nombre" name="nombre"/>
-                                        </div>                                                   
-
-                                        <div class="form-inline">
-                                            <label for="apPaterno"><strong>Apellido Paterno</strong></label>
-                                            <input type="text" class="input-xlarge" id="apPaterno" name="apPaterno"/>
+                                            <input name="itemAspecto1" type="checkbox">
+                                            <label for="itemAspecto1"><strong>Asistencias</strong></label>
+                                        </div>
+                                        <div  class="form-inline">
+                                            <input name="itemAspecto2" type="checkbox">
+                                            <label for="itemAspecto2"><strong>Dinámicas</strong></label>
                                         </div>
 
-                                        <div class="form-inline">
-                                            <label for="apMaterno"><strong>Apellido Materno</strong></label>
-                                            <input type="text" class="input-xlarge" id="apMaterno" name="apMaterno"/>  
-                                         </div> 
-                                       
-                                        <div class="form-inline">                                
-                                            <label for="carrera"><strong>Carrera</strong></label>
-                                            <!--<input type="text" class="input-xxlarge" id="carrera" name="carrera"/>-->
-
-                                            <select name="carrera">
-                                                <option selected value="0"> Elige una opción </option>
-                                                <option value="1">LIC. EN FISICA</option>      
-                                                <option value="2">LIC. EN INFORMATICA</option>
-                                                <option value="3">LIC. EN INGENIERIA CIVIL</option>
-                                                <option value="4">LIC. EN INGENIERIA EN BIOMEDICA</option>
-                                                <option value="5">LIC. EN INGENIERIA EN COMUNIACIONES Y ELECTRONICA</option>
-                                                <option value="6">LIC. EN INGENIERIA EN CONPUTACION</option>
-                                                <option value="7">LIC. EN INGENIERIA EN MECANICA ELECTRICA</option>
-                                                <option value="8">LIC. EN INGENIERIA QUIMICA</option>
-                                                <option value="9">LIC. EN MATEMATICAS</option>
-                                                <option value="10">LIC. EN QUIMICA</option>
-                                            </select>
-                                        </div>  
-
-                                        <div class="form-inline">
-                                            <label for="celular"><strong>Celular</strong></label>
-                                            <input type="text" class="input-large" id="celular" name="nombre" maxlength="10"/>
-                                        </div> 
-                                                                   
-                                        <div class="form-inline">
-                                            <label for="email"><strong>E-Mail</strong></label>
-                                            <input type="email" class="input-xxlarge" id="email" name="email" value="ejemplodemicorreo@gmail.com"/> 
+                                        <div  class="form-inline">
+                                            <input name="itemAspecto3" type="checkbox">
+                                            <label for="itemAspecto3"><strong>Exámenes Departamentales</strong></label>
                                         </div>
-                                    </div>                                
-                                    <div style="text-align: center">
-                                        <button type="submit" class="btn" id="btnAceptar"><strong>Aceptar</strong></button>
-                                        <button type="reset" class="btn" id="btnLimpiar"><strong>Limpiar</strong></button>
+
+                                        <div  class="form-inline">
+                                            <input name="itemAspecto4" type="checkbox">
+                                            <label for="itemAspecto4"><strong>Exámenes Parciales</strong></label>
+                                        </div>
+
+                                        <div  class="form-inline">
+                                            <input name="itemAspecto5" type="checkbox">
+                                            <label for="itemAspecto5"><strong>Exposiciones</strong></label>
+                                        </div>
+
+                                        <div  class="form-inline">
+                                            <input name="itemAspecto6" type="checkbox">
+                                            <label for="itemAspecto6"><strong>Tareas</strong></label>
+                                        </div>
+
+                                        <div  class="form-inline">
+                                            <input name="itemAspecto7" type="checkbox">
+                                            <label for="itemAspecto7"><strong>Participación</strong></label>
+                                        </div>
+
+                                        <div  class="form-inline">
+                                            <input name="itemAspecto8" type="checkbox">
+                                            <label for="itemAspecto8"><strong>Proyecto</strong></label>
+                                        </div>
+
+                                        <div  class="form-inline">
+                                            <input name="itemAspecto9" type="checkbox">
+                                            <label for="itemAspecto9"><strong>Puntos Extras</strong></label>
+                                        </div>
+
+                                        <div  class="form-inline">
+                                            <input name="itemAspecto10" type="checkbox">
+                                            <label for="itemAspecto10"><strong>Otros</strong></label>
+                                        </div>
+
+                                        <div class="form-inline" style="text-align: center">
+                                            <button type="submit" class="btn" id="btnGenerar"><strong>Generar</strong></button>
+                                            <button type="reset" class="btn" id="btnCancelar"><strong>Cancelar</strong></button>
+                                        </div>
                                     </div>
-                                </div>                                                                
+                                </div>
+                                <div class = "well">
+                                    <div class="TablaApectosEvaluacion" class="well">
+                                        <table  class="table table-bordered table-striped table-hover">       
+                                            <legend id="TituloArea"><strong>Evaluación</strong></legend>
+                                            <thead>
+                                                <tr>
+                                                    <th>Aspecto a Evaluar</th>
+                                                    <th>Puntos</th>
+                                                    <th>Porcentaje</th>                                 
+                                                </tr>      
+                                            </thead>    
+                                            <tbody>     
+                                                <tr>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>                                                    
+                                                </tr>
+                                                <tr>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>                                                    
+                                                </tr>                                   
+                                            </tbody>
+                                            <tfoot>
+                                                <th></th>
+                                                <th>Puntos Totales</th>        
+                                                <th>Porcentaje Total</th>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                    <div class="form-inline" style="text-align: center">
+                                        <button type="submit" class="btn" id="btnAceptar"><strong>Aceptar</strong></button>
+                                        <button type="reset" class="btn" id="btnCancelar"><strong>Cancelar</strong></button>
+                                    </div>
+                                </div>
                             </form>
                         </div>
                     </div>
