@@ -20,8 +20,12 @@ WebProject
 	  
 <h4>Proyecto realizado para la materia de Programación Web, ciclo 2013B por las alumnas Blanca Lizeth Mora Martinez y Lizbeth Linares Rayas.</h4>
 <p>
-	La pagina de la que vamos a partir es del login.htm 
-	<a href="alanturing.cucei.udg.mx/cc409/user205/ProyectoWeb/login.html ">Login </a>
+	La pagina de la que vamos a partir es del login.html
+
+	alanturing.cucei.udg.mx/cc409/user205/ProyectoWeb/login.html
+
+	<a href="http://alanturing.cucei.udg.mx/cc409/user205/ProyectoWeb/login.html">  Login    </a>
+
 	 	
 	<ul>
 		acceso como administrador: 
