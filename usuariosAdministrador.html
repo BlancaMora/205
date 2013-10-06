@@ -43,12 +43,14 @@
       </div>
       <div class="span10">
         <div class="well">
-          <div class="form-search">
-            <label for="buscar" >Ingrese Codigo</label>
-            <input type="text" id="codigo"></input>
-           
-            <input type="button" value"Buscar" id="enviado" onClick="validaformulario()"></input>
-           <button class="btn" id="enviado" type="submit" onClick="validaformulario()" >Buscar</button>
+
+          <form class="form-signin" id = "Buscar_por_codigo" action="php/validaciones.php" method="post">
+            <label >Ingrese Codigo</label>
+            <input type="text" class="form-control" placeholder="Codigo" id="codigo_buscar" autofocus>
+           <button class="btn" type="submit" onclick="validaformulario()">Buscar</button>
+          </form>
+         
+
 
           <div class="tablaPermisos">
           <table class="table table-bordered table-striped table-hover">
@@ -63,30 +65,47 @@
           </thead>
           <tbody>
             <tr>
-              <td><input type="checkbox"></input></td>
+              <td><input id="checkboxSelected" type="checkbox"></input></td>
               <td>2034</td>
               <td>user01</td>
               <td>Maestro</td>
          
           </tbody>
         </table>
-        </div>
-            <button class="btn" type="delete">Eliminar</button>
+        
+            <button class="btn" onclick="eliminado()"type="submit">Eliminar</button>
           </div>
 
         </div>
 
         <div class="well">
-          <div class="hero-unit">
+          
+           <form class="form" action="php/validaciones.php" method="post" id= "admin_agregarUsuario ">
+             <label type="text" id= "codigo">Codigo</label>
+              <input type="text" id="agregar_codigo"></input>
+           
+            <label type="text" id= "password">Contraseña</label>
+            <input type="text" id="agregar_password"></input>
+            <div class="control-group">
+              <label class="control-label" for="select01">Tipo de permiso </label>
+              <div class="controls">
+                <select id="select01">
+                  <option>Maestro</option>
+                  <option>Alumno</option>
+                  <option>Administrador</option>
+               </select>
+              </div>
 
             </div>
-               <button type="button" class="btn btn-primary">Agregar Alumno</button>
+             <button type="submit" class="btn btn-primary" onclick="agregarNuevoUsuario()">Agregar</button>
+           
+           </form>
+           
+             
+
 
           </div>
         </div>
-
-
-                           
 
       </div>
     </div>
@@ -96,7 +115,8 @@
 
 <script src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/validaciones.js"></script>
-<script type="text/javascript" src="js/bootstrap.modal.js"></script>
+<script type="text/javascript" src="js/bootstrap-modal.js"></script>
+
 
 </body>
 </html>

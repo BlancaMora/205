@@ -44,26 +44,26 @@
       </div>
       <div class="span10">
         <h3>Dar de Alta un ciclo</h3>
-        <form action="creaCiclo.php" class="form-horizontal">
+        <form class="form" action="php/validaciones.php" method="post" id="admin_DarAltaCiclo" >
           
           <div class="well">
             <label>Fecha de inicio</label> 
             <input type="text" class="span3" value="02-16-2013" id="dp1"></input>
-            <button class="btn">OK</button>
+            
 
           <label>Fecha de Fin</label> 
          
             <input type="text" class="span3" value="06-16-2013" id="dp1"></input>
-            <button class="btn">OK</button>
+            
           </div>
           
           <div class="well">
             <label>Dias Festivos</label> 
             <input type="text" class="span2" value="02-16-2013" id="dp1"></input>
             <label>Motivo: </label>
-            <input type="text"></input>
+            <input type="text" id="motivoDiaFestivo"></input>
             <button class="btn">+</button>
-            <button class="btn">OK</button>
+            <button class="btn" type="submit" onclick="agregarFestivoALista()" >OK</button>
           </div>
               <div class="tablaPermisos">
           <table class="table table-bordered table-striped table-hover">
@@ -91,8 +91,13 @@
         </table>
         </div>
         <div class="tablaBotones" id="tablaBotonesPer">
-          <button class="btn btn-primary" >Dar de Alta el CICLO</button>
-         
+          <button onclick="agregarCiclo()" type="submit" class="btn btn-primary" >Dar de Alta el CICLO</button>
+         </br>
+         </br>
+         </br>
+         </br>
+         </br>
+
         </div>
      
 
@@ -100,7 +105,7 @@
     </div>
       
 
-        </form>
+    </form>
                      
 
       </div>
@@ -111,5 +116,6 @@
 
 <script src="js/bootstrap.js"></script>
 <script type="text/javascript"src="js/bootstrap-datepicker.js" ></script>
+<script type="text/javascript" src="js/validaciones.js"></script>
 </body>
 </html>
