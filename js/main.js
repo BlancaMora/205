@@ -114,26 +114,24 @@ function validaEnviarFormularioAlumno()
 
 function validaAcademia()
 {
-	indice = document.getElementById("academia").selectedIndex;
+	indice = document.getElementById("Academia").selectedIndex;
 	if( indice == null || indice == 0 ) 
 	{
 		alert('Debes Elegir Una Opción')
 		return false;
 	}
-
 }
 
 function validaEnviarFormularioCurso()
 {
-	
-	var nrc = document.formAlumno.NRC.value;
-	var curso = document.formAlumno.nomCurso.value;
-	var sec = document.formAlumno.Seccion.value;
-	var hr = document.formAlumno.cantHoras.value;
-	var horario = document.formAlumno.Horario.value;	
+	var nrc = document.formCurso.NRC.value;
+	var curso = document.formCurso.nomCurso.value;
+	var sec = document.formCurso.Seccion.value;
+	var hr = document.formCurso.cantHoras.value;
+	var horario = document.formCurso.Horario.value;		
 
 
-	if((nrc == "") || (curso == "") || (sec == "") || (hr == "") || (validaAcademia() == true) || (horario == ""))
+	if((nrc == "") || (curso == "") || (sec == "") || (hr == "") || (validaAcademia() == false) || (horario == ""))
 	{		
 		alert('No se permiten campos vacios')
 		return false;
@@ -154,3 +152,46 @@ function limpiaFormularioAlumno()
 	var correo = document.formAlumno.email.value;	
 	return true;
 }
+
+function validaAsistenciaBuscar()
+{
+	var dia = document.formAsistencia.dia.value;
+
+	if(dia == "")
+	{		
+		alert('Agrega el dia')
+		return false;
+	}	
+
+	alert('Cambios Guardados Exitosamente')
+	return true;
+}
+
+function validaCalificacionBuscar()
+{
+	var dia = document.formCalificacion.dia.value;
+
+	if(dia == "")
+	{		
+		alert('Agrega el dia')
+		return false;
+	}	
+
+	alert('Cambios Guardados Exitosamente')
+	return true;
+}
+
+function validaEvaluacionBuscar()
+{
+	var nrc = document.formEvaluacion.NRC.value;
+
+	if(nrc == "")
+	{		
+		alert('Agrega el dia')
+		return false;
+	}	
+
+	alert('Cambios Guardados Exitosamente')
+	return true;
+}
+

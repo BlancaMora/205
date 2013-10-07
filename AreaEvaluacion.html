@@ -57,7 +57,7 @@
                             </div>                                        
                         </div>
                         <div class="span9">                            
-                            <form  method="post" action="creaEvaluacion.php">
+                            <form  method="post" action="" name"formEvaluacion">
                                 <legend id="TituloArea"><strong>Agregar Evaluación a un Cruso</strong></legend>
                                 <div class="well" >
                                     <div id="formularioAlumno">
@@ -67,8 +67,8 @@
                                                 <option selected value="0">Ciclo</option>        
                                             </select>                                            
                                             <label for="dia"><strong>NRC</strong></label> 
-                                            <input class="input-small" type="number">   
-                                            <a id="abrirArchivo" class="btn btn-mini" href="#">ok</a>
+                                            <input class="input-small" type="number" name="NRC" onkeypress="return permite(event,'num')">   
+                                            <a id="abrirArchivo" class="btn btn-mini" type="submit" onclick="validaEvaluacionBuscar()">ok</a>
                                         </div>  
                                     </div>                                                                    
                                 </div>   

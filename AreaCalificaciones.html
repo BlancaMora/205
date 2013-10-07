@@ -55,7 +55,7 @@
                             </div>                                        
                         </div>
                         <div class="span9">
-                            <form  method="post" action="creaAlumno.php">
+                            <form  method="post" action="" name="formCalificacion">
                                 <legend id="TituloArea"><strong>Asignar Calificación a Alumnos</strong></legend>
                                 <div class="well">
                                     <div id="formularioAlumno">
@@ -81,12 +81,12 @@
                                                 <option value="12">DICIEMBRE</option>
                                             </select>
                                             <label for="dia"><strong>Dia</strong></label> 
-                                            <input class="span1" type="number" onkeypress="return permite(event,'num')"   >
+                                            <input class="span1" type="number" onkeypress="return permite(event,'num')" name="dia">
                                             <label for="seccion"><strong>Sec.</strong></label> 
                                             <select name="seccion" class="input-small">
                                                 <option selected value="0">SEC.</option>        
                                             </select>
-                                            <a id="abrirArchivo" class="btn btn-mini" href="#"><i class="icon-search"></i></a>
+                                            <a id="abrirArchivo" class="btn btn-mini" type="submit" onclick="validaCalificacionBuscar()"><i class="icon-search"></i></a>
                                         </div>  
                                     </div>                                                                    
                                 </div>   

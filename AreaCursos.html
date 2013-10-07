@@ -64,7 +64,7 @@
                                 <label><strong>Clonar Curso</strong></label>
                                 <a class="btn btn-large" href="#"><i class="icon-edit"></i></a>
                             </div> -->                            
-                            <form method="post" action="">
+                            <form method="post" action="" name="formCurso">
                                 <legend id="TituloArea"><strong>Alta Curso</strong></legend>
                                 <div class="well">
                                     <div class="form-inline">
@@ -84,7 +84,7 @@
 
                                     <div class="form-inline">                                
                                         <label for="Academia"><strong>Acádemia</strong></label>
-                                        <select name="Academia" class="input-xxlarge">
+                                        <select name="Academia" class="input-xxlarge" id="Academia">
                                             <option selected value="0"> Elige una opción </option>
                                             <option value="1">DIVISION DE CIENCIAS BASICAS</option>
                                             <option value="2">DIVISION DE CIENCIAS QUIMICAS</option>
@@ -109,7 +109,7 @@
                                         </select>
                                     </div>
                                     <div class="form-inline" style="text-align: center">
-                                        <button type="submit" class="btn" id="btnAceptar" onclick="validaEnviarFormularioCurso"><strong>Aceptar</strong></button>
+                                        <button type="submit" class="btn" id="btnAceptar" onclick="validaEnviarFormularioCurso()"><strong>Aceptar</strong></button>
                                         <button type="reset" class="btn" id="btnLimpiar"><strong>Limpiar</strong></button>
                                     </div>               
                                 </div>   
