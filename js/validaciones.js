@@ -28,7 +28,7 @@ if (codigo == "5678" && password== "alumno"){
 }
 
 
-document.getElementById(login).submit();
+//document.getElementById(login).submit();
 
 }
 
